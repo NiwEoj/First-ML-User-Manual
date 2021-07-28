@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -51,6 +51,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Requirements" href="Requirements.html" />
     <link rel="prev" title="Welcome to First ML" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -85,6 +86,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    What is First ML?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Requirements.html">
+   Requirements
   </a>
  </li>
 </ul>
@@ -158,22 +164,17 @@
             </div>
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   What is First ML?
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#before-starting">
    Before starting
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#import-all-necessary-modules">
    Import all necessary modules
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#read-and-prepare-training-data">
    Read and prepare training data
   </a>
@@ -189,29 +190,21 @@
         
               <div>
                 
-  <p><span style="font-size:2.5em;color:black;">First ML - User Manual</span></p>
-<ul class="simple">
-<li><p><a class="reference external" href="#what-is-first-ml">What is First ML?</a></p></li>
-<li><p><a class="reference external" href="#before-starting">Before starting</a></p></li>
-<li><p><a class="reference external" href="#import-all-necessary-modules">Import all necessary modules</a></p></li>
-<li><p><a class="reference external" href="#read-and-prepare-training-data">Read and prepare training data</a></p></li>
-</ul>
-<div class="section" id="what-is-first-ml">
+  <div class="section" id="what-is-first-ml">
 <h1>What is First ML?<a class="headerlink" href="#what-is-first-ml" title="Permalink to this headline">¶</a></h1>
 <p>First ML is a Notebook that is designed to help people who are new to machine learning learn and use a simple Multi-layer Perceptron regressor model.</p>
 <p>The Multi-layer Perceptron model used in this Notebook is built from the sklearn.mlpregressor module.</p>
-</div>
 <div class="section" id="before-starting">
-<h1>Before starting<a class="headerlink" href="#before-starting" title="Permalink to this headline">¶</a></h1>
-<p>Make sure that all the necessary modules mentioned in the README file are installed properly before continuing further.</p>
+<h2>Before starting<a class="headerlink" href="#before-starting" title="Permalink to this headline">¶</a></h2>
+<p>Make sure that all the necessary modules mentioned in the <span class="xref myst">requirements section</span> are installed properly before continuing further.</p>
 <p>It is also expected that you have already ‘cleaned’ your training data properly.</p>
 </div>
 <div class="section" id="import-all-necessary-modules">
-<h1>Import all necessary modules<a class="headerlink" href="#import-all-necessary-modules" title="Permalink to this headline">¶</a></h1>
+<h2>Import all necessary modules<a class="headerlink" href="#import-all-necessary-modules" title="Permalink to this headline">¶</a></h2>
 <p>This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.</p>
 </div>
 <div class="section" id="read-and-prepare-training-data">
-<h1>Read and prepare training data<a class="headerlink" href="#read-and-prepare-training-data" title="Permalink to this headline">¶</a></h1>
+<h2>Read and prepare training data<a class="headerlink" href="#read-and-prepare-training-data" title="Permalink to this headline">¶</a></h2>
 <p>Training data is loaded and split in this cell. You might want to split the data if you want to work with a smaller training data size or if you want to test your model with multiple different sets of training data.</p>
 <p>There are 4</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># filename: name of file of training data</span>
@@ -226,6 +219,7 @@
 <span class="c1"># n: number of batches</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
 </pre></div>
+</div>
 </div>
 </div>
 
@@ -255,6 +249,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="index.html" title="previous page">Welcome to First ML</a>
+    <a class='right-next' id="next-link" href="Requirements.html" title="next page">Requirements</a>
 
         </div>
         

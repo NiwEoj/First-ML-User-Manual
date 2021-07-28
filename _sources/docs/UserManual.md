@@ -1,16 +1,10 @@
-<span style="font-size:2.5em;color:black;">First ML - User Manual</span>
-- [What is First ML?](#what-is-first-ml)
-- [Before starting](#before-starting)
-- [Import all necessary modules](#import-all-necessary-modules)
-- [Read and prepare training data](#read-and-prepare-training-data)
-
-## What is First ML?
+# What is First ML?
 First ML is a Notebook that is designed to help people who are new to machine learning learn and use a simple Multi-layer Perceptron regressor model. 
 
 The Multi-layer Perceptron model used in this Notebook is built from the sklearn.mlpregressor module.
 
 ## Before starting
-Make sure that all the necessary modules mentioned in the README file are installed properly before continuing further.
+Make sure that all the necessary modules mentioned in the [requirements section](../Requirements.md) are installed properly before continuing further.
 
 It is also expected that you have already 'cleaned' your training data properly.
 
