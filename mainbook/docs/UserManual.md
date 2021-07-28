@@ -3,7 +3,7 @@ In this section, we will go through the features of First ML. Each line under a 
 
 ## Import all necessary modules
 This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.
-````{note}
+````{admonition}The first code cell
 ```
 %matplotlib inline
 
@@ -25,14 +25,14 @@ import os
 import PySimpleGUI as sg
 import winsound, cellbell, joblib
 ```
-The first cell
 ````
 
 
 ## Read and prepare training data
 Training data is loaded and split in this cell. You might want to split the data if you want to work with a smaller training data size or if you want to test your model with multiple different sets of training data.  
 
-There are 4 
+There are 4 objects in this cell that you can change.
+````{admonition}The second code cell
 ```
 # filename: name of file of training data
 filename = 'Test1.fits'
@@ -46,3 +46,4 @@ bsize = 10000
 # n: number of batches
 n = 2
 ```
+````
