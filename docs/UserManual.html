@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Requirements" href="Requirements.html" />
-    <link rel="prev" title="Welcome to First ML" href="index.html" />
+    <link rel="prev" title="What is First ML?" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -191,47 +191,47 @@
 <div class="section" id="import-all-necessary-modules">
 <h2>Import all necessary modules<a class="headerlink" href="#import-all-necessary-modules" title="Permalink to this headline">¶</a></h2>
 <p>This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<div class="highlight-{admonition}The notranslate"><div class="highlight"><pre><span></span>```
+%matplotlib inline
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
-<span class="kn">from</span> <span class="nn">pyfuncs</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;darkgrid&quot;</span><span class="p">)</span>
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns 
+from pyfuncs import *
+sns.set_style(&quot;darkgrid&quot;)
 
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>  
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPRegressor</span>
-<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
-<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span> 
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">PySimpleGUI</span> <span class="k">as</span> <span class="nn">sg</span>
-<span class="kn">import</span> <span class="nn">winsound</span><span class="o">,</span> <span class="nn">cellbell</span><span class="o">,</span> <span class="nn">joblib</span>
+from sklearn.preprocessing import StandardScaler  
+from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPRegressor
+from astropy.io import fits
+from astropy.table import Table
+from IPython.display import display 
+from pathlib import Path
+import os
+import PySimpleGUI as sg
+import winsound, cellbell, joblib
+```
 </pre></div>
-</div>
-<p>The first cell</p>
 </div>
 </div>
 <div class="section" id="read-and-prepare-training-data">
 <h2>Read and prepare training data<a class="headerlink" href="#read-and-prepare-training-data" title="Permalink to this headline">¶</a></h2>
 <p>Training data is loaded and split in this cell. You might want to split the data if you want to work with a smaller training data size or if you want to test your model with multiple different sets of training data.</p>
-<p>There are 4</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># filename: name of file of training data</span>
-<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;Test1.fits&#39;</span>
+<p>There are 4 objects in this cell that you can change.</p>
+<div class="highlight-{admonition}The notranslate"><div class="highlight"><pre><span></span>```
+# filename: name of file of training data
+filename = &#39;Test1.fits&#39;
 
-<span class="c1"># f: format name (see astropy.Table documentation for more details)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="s1">&#39;fits&#39;</span>
+# f: format name (see astropy.Table documentation for more details)
+f = &#39;fits&#39;
 
-<span class="c1"># bsize: batch size</span>
-<span class="n">bsize</span> <span class="o">=</span> <span class="mi">10000</span>
+# bsize: batch size
+bsize = 10000
 
-<span class="c1"># n: number of batches</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
+# n: number of batches
+n = 2
+```
 </pre></div>
 </div>
 </div>
@@ -262,7 +262,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Welcome to First ML</a>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">What is First ML?</a>
     <a class='right-next' id="next-link" href="Requirements.html" title="next page">Requirements</a>
 
         </div>
