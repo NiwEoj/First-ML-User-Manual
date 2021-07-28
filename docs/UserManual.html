@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What is First ML? &#8212; First ML</title>
+    <title>Introduction to First ML &#8212; First ML</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -85,7 +85,7 @@
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   What is First ML?
+   Introduction to First ML
   </a>
  </li>
  <li class="toctree-l1">
@@ -165,11 +165,6 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#before-starting">
-   Before starting
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#import-all-necessary-modules">
    Import all necessary modules
   </a>
@@ -190,41 +185,36 @@
         
               <div>
                 
-  <div class="section" id="what-is-first-ml">
-<h1>What is First ML?<a class="headerlink" href="#what-is-first-ml" title="Permalink to this headline">¶</a></h1>
-<p>First ML is a Notebook that is designed to help people who are new to machine learning learn and use a simple Multi-layer Perceptron regressor model.</p>
-<p>The Multi-layer Perceptron model used in this Notebook is built from the sklearn.mlpregressor module.</p>
-<div class="section" id="before-starting">
-<h2>Before starting<a class="headerlink" href="#before-starting" title="Permalink to this headline">¶</a></h2>
-<p>Make sure that all the necessary modules mentioned in the <a class="reference internal" href="Requirements.html"><span class="doc std std-doc">requirements section</span></a> are installed properly before continuing further.</p>
-<p>It is also expected that you have already ‘cleaned’ your training data properly.</p>
-</div>
+  <div class="section" id="introduction-to-first-ml">
+<h1>Introduction to First ML<a class="headerlink" href="#introduction-to-first-ml" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we will go through the features of First ML. Each line under a comment in the Notebook is an object that you can change/edit.</p>
 <div class="section" id="import-all-necessary-modules">
 <h2>Import all necessary modules<a class="headerlink" href="#import-all-necessary-modules" title="Permalink to this headline">¶</a></h2>
 <p>This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
-%matplotlib inline
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns 
-from pyfuncs import *
-sns.set_style(&quot;darkgrid&quot;)
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+<span class="kn">from</span> <span class="nn">pyfuncs</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;darkgrid&quot;</span><span class="p">)</span>
 
-from sklearn.preprocessing import StandardScaler  
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPRegressor
-from astropy.io import fits
-from astropy.table import Table
-from IPython.display import display 
-from pathlib import Path
-import os
-import PySimpleGUI as sg
-import winsound, cellbell, joblib
-```
-The first cell
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>  
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPRegressor</span>
+<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span> 
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">PySimpleGUI</span> <span class="k">as</span> <span class="nn">sg</span>
+<span class="kn">import</span> <span class="nn">winsound</span><span class="o">,</span> <span class="nn">cellbell</span><span class="o">,</span> <span class="nn">joblib</span>
 </pre></div>
+</div>
+<p>The first cell</p>
 </div>
 </div>
 <div class="section" id="read-and-prepare-training-data">
