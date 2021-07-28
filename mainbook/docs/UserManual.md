@@ -1,6 +1,11 @@
 # Introduction to First ML
 In this section, we will go through the features of First ML. Each line under a comment in the Notebook is an object that you can change/edit.
 
+## Before starting
+Make sure that all the necessary modules mentioned in the [requirements section](Requirements) are installed properly before continuing further.
+
+It is also expected that you have already 'cleaned' your training data properly.
+
 ## Import all necessary modules
 This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.
 ````{admonition}The first code cell
