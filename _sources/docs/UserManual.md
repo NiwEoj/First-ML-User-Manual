@@ -8,8 +8,8 @@ It is also expected that you have already 'cleaned' your training data properly.
 
 ## Import all necessary modules
 This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.
-````{admonition}The first code cell
-```
+````{admonition} The first code cell
+```{code-cell} ipython3
 %matplotlib inline
 
 import numpy as np
@@ -37,8 +37,8 @@ import winsound, cellbell, joblib
 Training data is loaded and split in this cell. You might want to split the data if you want to work with a smaller training data size or if you want to test your model with multiple different sets of training data.  
 
 There are 4 objects in this cell that you can change.
-````{admonition}The second code cell
-```
+````{admonition} The second code cell
+```{code-cell} ipython3
 # filename: name of file of training data
 filename = 'Test1.fits'
 

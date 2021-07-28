@@ -201,48 +201,16 @@
 <div class="section" id="import-all-necessary-modules">
 <h2>Import all necessary modules<a class="headerlink" href="#import-all-necessary-modules" title="Permalink to this headline">¶</a></h2>
 <p>This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.</p>
-<div class="highlight-{admonition}The notranslate"><div class="highlight"><pre><span></span>```
-%matplotlib inline
-
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns 
-from pyfuncs import *
-sns.set_style(&quot;darkgrid&quot;)
-
-from sklearn.preprocessing import StandardScaler  
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPRegressor
-from astropy.io import fits
-from astropy.table import Table
-from IPython.display import display 
-from pathlib import Path
-import os
-import PySimpleGUI as sg
-import winsound, cellbell, joblib
-```
-</pre></div>
+<div class="admonition-the-first-code-cell admonition">
+<p class="admonition-title">The first code cell</p>
 </div>
 </div>
 <div class="section" id="read-and-prepare-training-data">
 <h2>Read and prepare training data<a class="headerlink" href="#read-and-prepare-training-data" title="Permalink to this headline">¶</a></h2>
 <p>Training data is loaded and split in this cell. You might want to split the data if you want to work with a smaller training data size or if you want to test your model with multiple different sets of training data.</p>
 <p>There are 4 objects in this cell that you can change.</p>
-<div class="highlight-{admonition}The notranslate"><div class="highlight"><pre><span></span>```
-# filename: name of file of training data
-filename = &#39;Test1.fits&#39;
-
-# f: format name (see astropy.Table documentation for more details)
-f = &#39;fits&#39;
-
-# bsize: batch size
-bsize = 10000
-
-# n: number of batches
-n = 2
-```
-</pre></div>
+<div class="admonition-the-second-code-cell admonition">
+<p class="admonition-title">The second code cell</p>
 </div>
 </div>
 </div>
