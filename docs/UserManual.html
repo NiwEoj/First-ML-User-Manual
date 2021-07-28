@@ -202,6 +202,29 @@
 <div class="section" id="import-all-necessary-modules">
 <h2>Import all necessary modules<a class="headerlink" href="#import-all-necessary-modules" title="Permalink to this headline">¶</a></h2>
 <p>This should be the first cell you run whenever you open the Notebook. Run this cell to import all necessary modules used in this Notebook.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
+%matplotlib inline
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns 
+from pyfuncs import *
+sns.set_style(&quot;darkgrid&quot;)
+
+from sklearn.preprocessing import StandardScaler  
+from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPRegressor
+from astropy.io import fits
+from astropy.table import Table
+from IPython.display import display 
+from pathlib import Path
+import os
+import PySimpleGUI as sg
+import winsound, cellbell, joblib
+```
+</pre></div>
+</div>
 </div>
 <div class="section" id="read-and-prepare-training-data">
 <h2>Read and prepare training data<a class="headerlink" href="#read-and-prepare-training-data" title="Permalink to this headline">¶</a></h2>
